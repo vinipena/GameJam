@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnvhqss2dr0bp"]
+
+[ext_resource type="Texture2D" uid="uid://gax8vm6yjj0k" path="res://Arts/Background/Background.png" id="1_purm0"]
+
+[node name="BG" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.40625, 2.37132)
+texture = ExtResource("1_purm0")
+centered = false
