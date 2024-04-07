@@ -1,10 +1,13 @@
 [gd_scene load_steps=2 format=3 uid="uid://bnvhqss2dr0bp"]
 
-[ext_resource type="Texture2D" uid="uid://gax8vm6yjj0k" path="res://Arts/Background/Background.png" id="1_purm0"]
+[ext_resource type="Texture2D" uid="uid://dy1ktvkcbocl5" path="res://Arts/Background/Green.png" id="1_o1v3b"]
 
-[node name="BG" type="ParallaxBackground"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(2.40625, 2.37132)
-texture = ExtResource("1_purm0")
-centered = false
+[node name="TextureRect" type="TextureRect"]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_o1v3b")
+stretch_mode = 1

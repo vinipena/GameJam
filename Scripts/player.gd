@@ -23,7 +23,7 @@ func _physics_process(delta):
 	if direction.x != 0 && state_machine.check_if_can_move():
 		velocity.x = direction.x * speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
+		velocity.x = move_toward(velocity.x, 0, 10)
 	move_and_slide()
 	update_animation()
 	update_facing_direction()

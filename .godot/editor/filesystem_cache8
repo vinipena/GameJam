@@ -1,17 +1,38 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712413376
+::res://::1712458199
 icon.svg::CompressedTexture2D::2553964492656485689::1712268197::1712268215::1::::<><>::
-::res://Arts/::1712270286
-::res://Arts/Assets/::1712270300
+::res://Arts/::1712457638
+jump_sound.wav::AudioStreamWAV::7657139480636691293::1712447229::1712447244::1::::<><>::
+::res://Arts/Assets/::1712457639
 Buildings.png::CompressedTexture2D::5877469382965754070::1664912152::1712270299::1::::<><>::
+End (Idle).png::CompressedTexture2D::7227331616256389026::1712457627::1712457639::1::::<><>::
 Hive.png::CompressedTexture2D::3112556855599591231::1664912012::1712270300::1::::<><>::
 Interior-01.png::CompressedTexture2D::8511472929043488386::1667248530::1712270300::1::::<><>::
 Props-Rocks.png::CompressedTexture2D::5759994417562131447::1664911804::1712270300::1::::<><>::
 Tiles.png::CompressedTexture2D::1632390539709856295::1667248574::1712270300::1::::<><>::
 Tree-Assets.png::CompressedTexture2D::5744466287396941972::1667248590::1712270300::1::::<><>::
-::res://Arts/Background/::1712270300
+::res://Arts/Assets/Fruits/::1712454115
+Apple.png::CompressedTexture2D::5903440058727692704::1712454101::1712454115::1::::<><>::
+Bananas.png::CompressedTexture2D::1454154459869826189::1712454101::1712454115::1::::<><>::
+Cherries.png::CompressedTexture2D::3295879041936805222::1712454101::1712454115::1::::<><>::
+Collected.png::CompressedTexture2D::3712780944420555997::1712454101::1712454115::1::::<><>::
+Kiwi.png::CompressedTexture2D::3694045756859286383::1712454101::1712454115::1::::<><>::
+Melon.png::CompressedTexture2D::3455663692217824464::1712454101::1712454115::1::::<><>::
+Orange.png::CompressedTexture2D::558760507374032075::1712454101::1712454115::1::::<><>::
+Pineapple.png::CompressedTexture2D::1145681353172203066::1712454101::1712454115::1::::<><>::
+Strawberry.png::CompressedTexture2D::4836946508013662356::1712454101::1712454115::1::::<><>::
+::res://Arts/Background/::1712448826
 Background.png::CompressedTexture2D::422589606829625768::1712268686::1712270300::1::::<><>::
-::res://Arts/Character/::1712268686
+Green.png::CompressedTexture2D::8898110338540649564::1712448708::1712448712::1::::<><>::
+Terrain (16x16).png::CompressedTexture2D::7050332938618518528::1712448826::1712448826::1::::<><>::
+::res://Arts/Background/parallax background/::1712447233
+ground.png::CompressedTexture2D::4650623889192990488::1712444421::1712444421::1::::<><>::
+plx-1.png::CompressedTexture2D::1957902136872115397::1712440493::1712440504::1::::<><>::
+plx-2.png::CompressedTexture2D::5299223135520121567::1712440493::1712440504::1::::<><>::
+plx-3.png::CompressedTexture2D::3671868139201071855::1712440493::1712440504::1::::<><>::
+plx-4.png::CompressedTexture2D::3810003535373203043::1712440493::1712440504::1::::<><>::
+plx-5.png::CompressedTexture2D::6619580360976831730::1712440493::1712440504::1::::<><>::
+::res://Arts/Character/::1712441834
 ::res://Arts/Character/Attack-01/::1712270300
 Attack-01-Sheet.png::CompressedTexture2D::7382035933922989649::1712268686::1712270300::1::::<><>::
 ::res://Arts/Character/Dead/::1712270300
@@ -32,6 +53,14 @@ Jump-All-Sheet.png::CompressedTexture2D::4515612732765674525::1712268686::171227
 Jump-End-Sheet.png::CompressedTexture2D::520598558002601010::1712268686::1712270300::1::::<><>::
 ::res://Arts/Character/Jump-Start/::1712270300
 Jump-Start-Sheet.png::CompressedTexture2D::8276113303006481021::1712268686::1712270300::1::::<><>::
+::res://Arts/Character/Pink Man/::1712441835
+Double Jump (32x32).png::CompressedTexture2D::3975199876039391067::1712441812::1712441835::1::::<><>::
+Fall (32x32).png::CompressedTexture2D::3547642033492262193::1712441812::1712441835::1::::<><>::
+Hit (32x32).png::CompressedTexture2D::8053264450670523011::1712441812::1712441835::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::5544576612968271431::1712441812::1712441835::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::1281380705192610952::1712441812::1712441835::1::::<><>::
+Run (32x32).png::CompressedTexture2D::5680492735526962526::1712441812::1712441835::1::::<><>::
+Wall Jump (32x32).png::CompressedTexture2D::8282666865514483199::1712441812::1712441835::1::::<><>::
 ::res://Arts/Character/Run/::1712270300
 Run-Sheet.png::CompressedTexture2D::1306297179037144299::1712268686::1712270300::1::::<><>::
 ::res://Arts/HUD/::1712270300
@@ -73,17 +102,25 @@ Golden-Tree.png::CompressedTexture2D::92012770330133798::1712268687::1712270299:
 Green-Tree.png::CompressedTexture2D::430099004831634564::1712268687::1712270299::1::::<><>::
 Red-Tree.png::CompressedTexture2D::5752238181909448784::1712268687::1712270300::1::::<><>::
 Yellow-Tree.png::CompressedTexture2D::8583196630886763430::1712268687::1712270300::1::::<><>::
-::res://Scenes/::1712413375
-main.tscn::PackedScene::5033721573857113382::1712409623::0::1::::<><>::uid://sko0w8wy0jeo::::res://Scenes/player.tscn<>uid://xi0h7fdn6l16::::res://Arts/Assets/Tiles.png
-player.tscn::PackedScene::1284938853296427010::1712413375::0::1::::<><>::res://Scripts/player.gd<>uid://hogggu16otnm::::res://Arts/Character/Jump-End/Jump-End-Sheet.png<>uid://dy5u01my1h8jd::::res://Arts/Character/Idle/Idle-Sheet.png<>uid://dp6am20pqm2l2::::res://Arts/Character/Jump-Start/Jump-Start-Sheet.png<>uid://b5lnqnfla372h::::res://Arts/Character/Jumlp-All/Jump-All-Sheet.png<>uid://su1r2m75xrl0::::res://Arts/Character/Run/Run-Sheet.png<>res://Scripts/PlayerStateMachine.gd<>uid://bajttpatc4a7j::::res://Arts/Character/Dead/Dead-Sheet.png<>res://Scripts/States/GroundState.gd<>res://Scripts/States/AirState.gd<>res://Scripts/States/LandingState.gd<>res://Scripts/StateDebugLabel.gd<>res://Scripts/States/DeadState.gd<>res://Scripts/States/ResetState.gd
-::res://Scripts/::1712413375
-player.gd::GDScript::-1::1712384713::0::1::::<>CharacterBody2D<>::
+::res://Scenes/::1712458128
+bg.tscn::PackedScene::3342682149932865581::1712458128::0::1::::<><>::uid://dy1ktvkcbocl5::::res://Arts/Background/Green.png
+cherries_collectable.tscn::PackedScene::6947216288238376754::1712458128::0::1::::<><>::res://Scripts/cherries_collectable.gd<>uid://bm7sv8dwijkhi::::res://Arts/Assets/Fruits/Cherries.png
+ground.tscn::PackedScene::5760935628815474324::1712458127::0::1::::<><>::uid://b7i2di72mqbwi::::res://Arts/Background/parallax background/ground.png
+main.tscn::PackedScene::5033721573857113382::1712458127::0::1::::<><>::uid://sko0w8wy0jeo::::res://Scenes/player.tscn<>uid://ca1jl7tjmr12y::::res://Scenes/tile_map.tscn<>uid://bnvhqss2dr0bp::::res://Scenes/bg.tscn<>uid://c58jvwxd42dc1::::res://Scenes/cherries_collectable.tscn<>res://Scripts/GameManager.gd<>uid://cyulk4ytok41t::::res://Scenes/trophy.tscn<>uid://codwal8ifbd::::res://Scenes/ui.tscn
+player.tscn::PackedScene::1284938853296427010::1712458127::0::1::::<><>::res://Scripts/player.gd<>uid://hogggu16otnm::::res://Arts/Character/Jump-End/Jump-End-Sheet.png<>uid://dy5u01my1h8jd::::res://Arts/Character/Idle/Idle-Sheet.png<>uid://dp6am20pqm2l2::::res://Arts/Character/Jump-Start/Jump-Start-Sheet.png<>uid://b5lnqnfla372h::::res://Arts/Character/Jumlp-All/Jump-All-Sheet.png<>uid://su1r2m75xrl0::::res://Arts/Character/Run/Run-Sheet.png<>uid://cm6w5dsxvw7hq::::res://Arts/Character/Pink Man/Run (32x32).png<>res://Scripts/PlayerStateMachine.gd<>uid://bwvu7xd87le5x::::res://Arts/Character/Pink Man/Double Jump (32x32).png<>uid://siyfg4uxti6c::::res://Arts/Character/Pink Man/Jump (32x32).png<>uid://bajttpatc4a7j::::res://Arts/Character/Dead/Dead-Sheet.png<>uid://bqsre70nfgvhp::::res://Arts/Character/Pink Man/Fall (32x32).png<>uid://ck83mp7pu5top::::res://Arts/Character/Pink Man/Idle (32x32).png<>res://Scripts/States/GroundState.gd<>res://Scripts/States/AirState.gd<>res://Scripts/States/LandingState.gd<>res://Scripts/StateDebugLabel.gd<>res://Scripts/States/DeadState.gd<>res://Scripts/States/ResetState.gd<>uid://dhdf76u4q6udp::::res://Arts/jump_sound.wav
+tile_map.tscn::PackedScene::4827082996183750846::1712458128::0::1::::<><>::uid://c7ph7ofygra7y::::res://Arts/Background/Terrain (16x16).png
+trophy.tscn::PackedScene::6499348475774524299::1712458128::0::1::::<><>::uid://da78di0ce1nkk::::res://Arts/Assets/End (Idle).png
+ui.tscn::PackedScene::4985306846476905::1712458128::0::1::::<><>::
+::res://Scripts/::1712455735
+cherries_collectable.gd::GDScript::-1::1712455735::0::1::::<>Area2D<>::
+GameManager.gd::GDScript::-1::1712455583::0::1::::<>Node<>::
+player.gd::GDScript::-1::1712452568::0::1::::<>CharacterBody2D<>::
 PlayerStateMachine.gd::GDScript::-1::1712353591::0::1::::PlayerStateMachine<>Node<>::
-State.gd::GDScript::-1::1712353990::0::1::::State<>Node<>::
 StateDebugLabel.gd::GDScript::-1::1712385702::0::1::::<>Label<>::
-::res://Scripts/States/::1712413375
+::res://Scripts/States/::1712448062
 AirState.gd::GDScript::-1::1712384847::0::1::::AirState<>State<>::
-DeadState.gd::GDScript::-1::1712413311::0::1::::DeadState<>State<>::
-GroundState.gd::GDScript::-1::1712413294::0::1::::GroundState<>State<>::
-LandingState.gd::GDScript::-1::1712385413::0::1::::LandingState<>State<>::
+DeadState.gd::GDScript::-1::1712413772::0::1::::DeadState<>State<>::
+GroundState.gd::GDScript::-1::1712448062::0::1::::GroundState<>State<>::
+LandingState.gd::GDScript::-1::1712413491::0::1::::LandingState<>State<>::
 ResetState.gd::GDScript::-1::1712413294::0::1::::ResetState<>State<>::
+State.gd::GDScript::-1::1712353990::0::1::::State<>Node<>::
