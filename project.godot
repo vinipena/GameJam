@@ -11,12 +11,14 @@ config_version=5
 [application]
 
 config/name="GameJam Irmaos Gostosos - Runner"
-run/main_scene="res://Scenes/main.tscn"
+run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/resizable=false
+window/stretch/mode="canvas_items"
 window/stretch/scale=2.0
 
 [input]

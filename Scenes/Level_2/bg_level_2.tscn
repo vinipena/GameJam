@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://r2dcj74ujr5o"]
+
+[ext_resource type="Texture2D" uid="uid://dy1ktvkcbocl5" path="res://Arts/Background/Green.png" id="1_iykyg"]
+
+[node name="BG" type="TextureRect"]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_iykyg")
+stretch_mode = 1

@@ -1,4 +1,3 @@
-res://Scenes/ui.tscn
 res://Scenes/main.tscn
 res://Scenes/player.tscn
 res://Scenes/ground.tscn
@@ -6,5 +5,17 @@ res://Scenes/tile_map.tscn
 res://Scenes/bg.tscn
 res://Scenes/cherries_collectable.tscn
 res://Scenes/trophy.tscn
-res://Scripts/cherries_collectable.gd
+res://Scenes/ui.tscn
 res://Scripts/GameManager.gd
+res://Scripts/cherries_collectable.gd
+res://Scenes/level_1.tscn
+res://Scenes/main_menu.gd
+res://Scenes/main_menu.tscn
+res://Scenes/trophy.gd
+res://Scenes/Level_1/level_1.tscn
+res://Scenes/Level_2/level_2.tscn
+res://Scenes/Level_2/tile_map_level_2.tscn
+res://Scenes/obstacles.tscn
+res://Scripts/main_menu.gd
+res://Scripts/trophy.gd
+res://Scenes/Level_1/tile_map_level_1.tscn

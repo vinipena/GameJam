@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqwhd5xuwr6mx"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_oqwff"]
+[ext_resource type="Texture2D" uid="uid://dfl2aw46ytx8y" path="res://Arts/Background/Pink.png" id="2_ky5oy"]
+[ext_resource type="Texture2D" uid="uid://c3yq4pjlhna5s" path="res://Arts/Background/CherryPicker_logo.png" id="3_x57dk"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_oqwff")
+
+[node name="BG" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ky5oy")
+stretch_mode = 1
+
+[node name="Logo" type="TextureRect" parent="."]
+texture_filter = 1
+texture_repeat = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_top = -114.0
+offset_right = 260.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_x57dk")
+
+[node name="Label" type="Label" parent="Logo"]
+offset_left = 153.0
+offset_top = 112.0
+offset_right = 362.0
+offset_bottom = 142.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 21
+text = "Pick all the cheeries!!"
+
+[node name="GameStart" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -89.5
+offset_top = 73.0
+offset_right = 89.5
+offset_bottom = 127.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Game Start
+"
+
+[connection signal="pressed" from="GameStart" to="." method="_on_game_start_pressed"]
