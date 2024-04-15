@@ -17,8 +17,6 @@ func _ready():
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
-	else :
-		has_doubled_jumped = false
 	direction = Input.get_vector("left", "right","jump","crouch")
 	if direction.x != 0 && state_machine.check_if_can_move():
 		velocity.x = direction.x * speed

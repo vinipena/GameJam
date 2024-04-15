@@ -5,10 +5,10 @@ func _process(delta):
 	var points = game_manager.points
 	var total = game_manager.total_cherries
 	if(points != total):
-		$Sprite2D.visible = false
+		$Sprite2D.modulate = Color(1,1,1,0.5)
 		$CollisionShape2D.disabled= true
 	else: 
-		$Sprite2D.visible = true
+		$Sprite2D.modulate = Color(1,1,1,1)
 		$CollisionShape2D.disabled= false
 
 func _on_body_entered(body):

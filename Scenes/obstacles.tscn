@@ -1,41 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://ir8fo5ifbmq1"]
+[gd_scene load_steps=13 format=3 uid="uid://ir8fo5ifbmq1"]
 
-[ext_resource type="Texture2D" uid="uid://6yo68txx7yoa" path="res://Arts/Pixel Adventure 1 (1)/Free/Traps/Platforms/Brown On (32x8).png" id="1_d6hd1"]
+[ext_resource type="Script" path="res://Scripts/obstacles.gd" id="1_x7re7"]
 [ext_resource type="Texture2D" uid="uid://c6yrgqf1mmatc" path="res://Arts/Pixel Adventure 1 (1)/Free/Traps/Saw/On (38x38).png" id="2_mc41g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_coepp"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_85e72"]
-atlas = ExtResource("1_d6hd1")
-region = Rect2(0, 0, 32, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o8ixk"]
-atlas = ExtResource("1_d6hd1")
-region = Rect2(32, 0, 32, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cwgmq"]
-atlas = ExtResource("1_d6hd1")
-region = Rect2(64, 0, 32, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4kwed"]
-atlas = ExtResource("1_d6hd1")
-region = Rect2(96, 0, 32, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lly06"]
-atlas = ExtResource("1_d6hd1")
-region = Rect2(128, 0, 32, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xvf3e"]
-atlas = ExtResource("1_d6hd1")
-region = Rect2(160, 0, 32, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_77x70"]
-atlas = ExtResource("1_d6hd1")
-region = Rect2(192, 0, 32, 8)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vsds8"]
-atlas = ExtResource("1_d6hd1")
-region = Rect2(224, 0, 32, 8)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rvgy5"]
 atlas = ExtResource("2_mc41g")
@@ -73,35 +41,6 @@ region = Rect2(266, 0, 38, 38)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_85e72")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o8ixk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cwgmq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4kwed")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lly06")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xvf3e")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_77x70")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vsds8")
-}],
-"loop": true,
-"name": &"brown_plataform",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_rvgy5")
 }, {
 "duration": 1.0,
@@ -127,15 +66,20 @@ animations = [{
 }],
 "loop": true,
 "name": &"saw",
-"speed": 20.0
+"speed": 60.0
 }]
 
 [node name="Obstacles" type="Area2D"]
+script = ExtResource("1_x7re7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_coepp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_20llq")
-animation = &"brown_plataform"
-frame_progress = 0.526544
+animation = &"saw"
+autoplay = "saw"
+frame_progress = 0.16818
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
