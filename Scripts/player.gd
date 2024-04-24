@@ -7,13 +7,9 @@ extends CharacterBody2D
 @onready var coyote_timer: Timer = $CoyoteTimer
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
 
-<<<<<<< Updated upstream
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-=======
 @export var speed :float = 300.0
 @export var deceleration : float = 15
 
->>>>>>> Stashed changes
 var direction :Vector2 = Vector2.ZERO
 var has_doubled_jumped:bool = false;
 var animation_lock:bool = false;
@@ -38,13 +34,10 @@ func _physics_process(delta):
 	move_and_slide()
 	update_animation()
 	update_facing_direction()
-<<<<<<< Updated upstream
-=======
 	
 	if was_on_floor && !is_on_floor():
 		coyote_timer.start()
 
->>>>>>> Stashed changes
 
 func update_animation():
 	if velocity.x > 0 and is_on_floor():
@@ -63,3 +56,13 @@ func update_facing_direction():
 		sprite.flip_h =false
 	elif direction.x < 0:
 		sprite.flip_h =true
+
+func _process(delta):
+	pass
+
+func _input(event : InputEvent):
+	# move o player para baixo se ele estiver em cima de uma plataforma atravessavel
+	if event.is_action_pressed("crouch") and is_on_floor():
+		position.y += 1
+	
+	

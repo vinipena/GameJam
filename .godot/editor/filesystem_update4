@@ -1,19 +1,5 @@
 res://Scenes/Level_1/tile_map_level_1.tscn
-<<<<<<< Updated upstream
-res://Scenes/trophy.tscn
-res://Scripts/player.gd
-res://Scripts/States/GroundState.gd
-res://Scenes/player.tscn
-res://Scripts/States/AirState.gd
-res://Scripts/trophy.gd
-res://Scenes/obstacles.gd
-=======
-res://Scripts/States/AirState.gd
 res://Scenes/stick_platform.tscn
 res://Scenes/player.tscn
 res://Scenes/Level_1/level_1.tscn
 res://Scenes/trail.tscn
-res://Scripts/States/LandingState.gd
-res://Scripts/player.gd
-res://Scripts/States/GroundState.gd
->>>>>>> Stashed changes
