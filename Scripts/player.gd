@@ -1,34 +1,63 @@
 extends CharacterBody2D
 
-@export var speed :float = 300.0
+
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var animation_tree:AnimationTree = $AnimationTree
 @onready var state_machine:PlayerStateMachine = $PlayerStateMachine
+@onready var coyote_timer: Timer = $CoyoteTimer
+@onready var animation_player : AnimationPlayer = $AnimationPlayer
 
+<<<<<<< Updated upstream
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+=======
+@export var speed :float = 300.0
+@export var deceleration : float = 15
+
+>>>>>>> Stashed changes
 var direction :Vector2 = Vector2.ZERO
 var has_doubled_jumped:bool = false;
 var animation_lock:bool = false;
 var was_in_air : bool = false
 
-func _ready():
-	animation_tree.active = true
+var jump_cut: bool = false
 
-func _physics_process(delta):
-	if not is_on_floor():
-		velocity.y += gravity * delta
-	direction = Input.get_vector("left", "right","jump","crouch")
+func _ready():
+	pass
+	
+
+func _physics_process(delta):	
+	direction = Input.get_vector("left","right","crouch","")
 	if direction.x != 0 && state_machine.check_if_can_move():
 		velocity.x = direction.x * speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, 10)
+		velocity.x = move_toward(velocity.x, 0, deceleration)
+		
+	var was_on_floor = is_on_floor()
+	
+	
 	move_and_slide()
 	update_animation()
 	update_facing_direction()
+<<<<<<< Updated upstream
+=======
+	
+	if was_on_floor && !is_on_floor():
+		coyote_timer.start()
+
+>>>>>>> Stashed changes
 
 func update_animation():
-	animation_tree.set("parameters/Move/blend_position", direction.x)
-
+	if velocity.x > 0 and is_on_floor():
+		animation_player.play("run")
+	elif velocity.x < 0 and is_on_floor():
+		animation_player.play("run")
+	elif velocity.y < 0:
+		animation_player.play("jump")
+	elif velocity.y > 0:
+		animation_player.play("landing")
+	else: 
+		animation_player.play("idle")
+		
 func update_facing_direction():
 	if direction.x > 0:
 		sprite.flip_h =false

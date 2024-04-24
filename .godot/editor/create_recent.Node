@@ -1,3 +1,11 @@
+<<<<<<< Updated upstream
+=======
+Timer
+Line2D
+StaticBody2D
+CollisionShape2D
+RayCast2D
+>>>>>>> Stashed changes
 Node
 AnimatedSprite2D
 Label
@@ -9,6 +17,9 @@ Panel
 CanvasLayer
 Sprite2D
 RemoteTransform2D
+<<<<<<< Updated upstream
 TileMap
 AudioStreamPlayer
 AudioStreamPlayer2D
+=======
+>>>>>>> Stashed changes

@@ -8,7 +8,7 @@ var character :CharacterBody2D
 var next_state:State
 var playback:AnimationNodeStateMachinePlayback
 
-func state_proceess(delta):
+func state_process(delta):
 	pass
 
 func state_input(event: InputEvent):
