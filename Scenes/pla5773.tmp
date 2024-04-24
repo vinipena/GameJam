@@ -601,8 +601,7 @@ centered = false
 offset = Vector2(-32, -32)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("7_68if7")
-hframes = 6
+texture = ExtResource("7_mias5")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Sprite2D")
@@ -623,11 +622,10 @@ jump_height = 100.0
 jump_time_to_peak = 0.4
 jump_time_to_descent = 0.3
 
-[node name="Air" type="Node" parent="PlayerStateMachine" node_paths=PackedStringArray("state_machine", "landing_state", "ground_state")]
+[node name="Air" type="Node" parent="PlayerStateMachine" node_paths=PackedStringArray("state_machine", "landing_state")]
 script = ExtResource("9_1s0mv")
 state_machine = NodePath("..")
 landing_state = NodePath("../Landing")
-ground_state = NodePath("../Ground")
 double_jump_velocity = -300.0
 
 [node name="Landing" type="Node" parent="PlayerStateMachine" node_paths=PackedStringArray("ground_state", "air_state")]
