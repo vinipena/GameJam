@@ -7,6 +7,8 @@ extends CharacterBody2D
 @onready var coyote_timer: Timer = $CoyoteTimer
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
 
+@export var air_state : State
+
 @export var speed :float = 300.0
 @export var deceleration : float = 15
 
@@ -22,11 +24,13 @@ func _ready():
 	
 
 func _physics_process(delta):	
-	direction = Input.get_vector("left","right","crouch","")
-	if direction.x != 0 && state_machine.check_if_can_move():
-		velocity.x = direction.x * speed
-	else:
-		velocity.x = move_toward(velocity.x, 0, deceleration)
+	
+	if state_machine.can_move:
+		direction = Input.get_vector("left","right","crouch","")
+		if direction.x != 0 && state_machine.check_if_can_move():
+			velocity.x = direction.x * speed
+		else:
+			velocity.x = move_toward(velocity.x, 0, deceleration)
 		
 	var was_on_floor = is_on_floor()
 	
@@ -40,10 +44,10 @@ func _physics_process(delta):
 
 
 func update_animation():
-	if velocity.x > 0 and is_on_floor():
+	if (velocity.x > 0 || velocity.x < 0)  and is_on_floor() :
 		animation_player.play("run")
-	elif velocity.x < 0 and is_on_floor():
-		animation_player.play("run")
+	elif air_state.has_doubled_jumped:
+		animation_player.play("double_jump")
 	elif velocity.y < 0:
 		animation_player.play("jump")
 	elif velocity.y > 0:

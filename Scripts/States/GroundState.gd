@@ -21,6 +21,9 @@ func _physics_process(delta):
 		# Aplica gravidade se o personagem não está no chão
 		#character.velocity.y += gravity * delta
 		character.velocity.y += get_gravity() * delta
+		
+	if !character.is_on_floor() and !character.coyote_timer.is_stopped():
+		next_state = air_state 
 
 	if Input.is_action_just_released("jump"): # air_state and character.velocity.y < 0:
 		cut_jump()

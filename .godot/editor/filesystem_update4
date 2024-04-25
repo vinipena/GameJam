@@ -3,3 +3,9 @@ res://Scenes/stick_platform.tscn
 res://Scenes/player.tscn
 res://Scenes/Level_1/level_1.tscn
 res://Scenes/trail.tscn
+res://Scripts/States/AirState.gd
+res://Scripts/player.gd
+res://Scripts/States/LandingState.gd
+res://Scripts/States/GroundState.gd
+res://Scripts/PlayerStateMachine.gd
+res://Scripts/States/State.gd

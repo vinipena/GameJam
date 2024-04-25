@@ -7,6 +7,8 @@ var states:Array[State]
 
 @onready var animation_player : AnimationPlayer = $"../AnimationPlayer"
 
+
+
 func _ready():
 	for child in get_children():
 		if (child is State):

@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://sko0w8wy0jeo"]
+[gd_scene load_steps=68 format=3 uid="uid://sko0w8wy0jeo"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_r873b"]
 [ext_resource type="Texture2D" uid="uid://hogggu16otnm" path="res://Arts/Character/Jump-End/Jump-End-Sheet.png" id="2_5ofyf"]
@@ -15,7 +15,6 @@
 [ext_resource type="Texture2D" uid="uid://b6os1uthmt0sy" path="res://Arts/Pixel Adventure 1 (1)/Free/Main Characters/Pink Man/Hit (32x32).png" id="7_ymtnq"]
 [ext_resource type="Script" path="res://Scripts/States/GroundState.gd" id="8_wwwgl"]
 [ext_resource type="Script" path="res://Scripts/States/AirState.gd" id="9_1s0mv"]
-[ext_resource type="Script" path="res://Scripts/States/LandingState.gd" id="10_aemtj"]
 [ext_resource type="Script" path="res://Scripts/StateDebugLabel.gd" id="11_mdvjr"]
 [ext_resource type="Script" path="res://Scripts/States/DeadState.gd" id="12_vl2tl"]
 [ext_resource type="Script" path="res://Scripts/States/ResetState.gd" id="13_hnjkw"]
@@ -586,11 +585,12 @@ _data = {
 radius = 8.0
 height = 28.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("air_state")]
 texture_filter = 1
 scale = Vector2(3, 3)
 collision_mask = 4
 script = ExtResource("1_r873b")
+air_state = NodePath("PlayerStateMachine/Air")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 visible = false
@@ -623,18 +623,11 @@ jump_height = 100.0
 jump_time_to_peak = 0.4
 jump_time_to_descent = 0.3
 
-[node name="Air" type="Node" parent="PlayerStateMachine" node_paths=PackedStringArray("state_machine", "landing_state", "ground_state")]
+[node name="Air" type="Node" parent="PlayerStateMachine" node_paths=PackedStringArray("state_machine", "ground_state")]
 script = ExtResource("9_1s0mv")
 state_machine = NodePath("..")
-landing_state = NodePath("../Landing")
 ground_state = NodePath("../Ground")
 double_jump_velocity = -300.0
-
-[node name="Landing" type="Node" parent="PlayerStateMachine" node_paths=PackedStringArray("ground_state", "air_state")]
-script = ExtResource("10_aemtj")
-ground_state = NodePath("../Ground")
-air_state = NodePath("../Air")
-can_move = false
 
 [node name="Dead" type="Node" parent="PlayerStateMachine" node_paths=PackedStringArray("reset_state")]
 script = ExtResource("12_vl2tl")
