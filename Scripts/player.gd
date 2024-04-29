@@ -8,7 +8,7 @@ extends CharacterBody2D
 @onready var animation_player : AnimationPlayer = $AnimationPlayer
 
 @export var air_state : State
-
+ 
 @export var speed :float = 300.0
 @export var deceleration : float = 15
 
@@ -23,9 +23,11 @@ func _ready():
 	pass
 	
 
-func _physics_process(delta):	
+func _physics_process(delta):
 	
-	if state_machine.can_move:
+	#state_machine.current_state.can_move = false
+	
+	if state_machine.current_state.can_move:
 		direction = Input.get_vector("left","right","crouch","")
 		if direction.x != 0 && state_machine.check_if_can_move():
 			velocity.x = direction.x * speed

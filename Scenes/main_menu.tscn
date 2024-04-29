@@ -38,6 +38,7 @@ size_flags_vertical = 4
 texture = ExtResource("3_x57dk")
 
 [node name="Label" type="Label" parent="Logo"]
+layout_mode = 0
 offset_left = 153.0
 offset_top = 112.0
 offset_right = 362.0

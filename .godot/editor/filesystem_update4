@@ -1,11 +1,13 @@
 res://Scenes/Level_1/tile_map_level_1.tscn
 res://Scenes/stick_platform.tscn
-res://Scenes/player.tscn
 res://Scenes/Level_1/level_1.tscn
 res://Scenes/trail.tscn
-res://Scripts/States/AirState.gd
+res://Scenes/player.tscn
 res://Scripts/player.gd
-res://Scripts/States/LandingState.gd
-res://Scripts/States/GroundState.gd
 res://Scripts/PlayerStateMachine.gd
 res://Scripts/States/State.gd
+res://Scenes/main_menu.tscn
+res://Scenes/cherries_collectable.tscn
+res://Scripts/cherries_collectable.gd
+res://Scripts/GameManager.gd
+res://Scenes/Level_1/bg_level_1.tscn

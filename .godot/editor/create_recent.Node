@@ -1,25 +1,14 @@
-<<<<<<< Updated upstream
-=======
+AnimatedSprite2D
+TextureRect
 Timer
 Line2D
 StaticBody2D
 CollisionShape2D
 RayCast2D
->>>>>>> Stashed changes
 Node
-AnimatedSprite2D
 Label
 CollisionShape2D
 Area2D
 Button
-TextureRect
 Panel
 CanvasLayer
-Sprite2D
-RemoteTransform2D
-<<<<<<< Updated upstream
-TileMap
-AudioStreamPlayer
-AudioStreamPlayer2D
-=======
->>>>>>> Stashed changes
