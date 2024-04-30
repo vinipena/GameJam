@@ -1,16 +1,17 @@
 extends Area2D
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
+@onready var timer = $Timer
+@onready var audio_stream_player = $AudioStreamPlayer
 
 func _on_body_entered(body):
-	if(body.name == "Player"):
+	if body.name == "Player":
+		audio_stream_player.play()
+		audio_stream_player.play()
+		Engine.time_scale = 0.5
+		body.get_node("CollisionShape2D").queue_free()
 		print("morreu")
+		timer.start()
+
+func _on_timer_timeout():
+	Engine.time_scale = 1.0
+	get_tree().reload_current_scene()

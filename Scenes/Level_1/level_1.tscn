@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://cdymwnw3odf2e"]
+[gd_scene load_steps=30 format=3 uid="uid://cdymwnw3odf2e"]
 
 [ext_resource type="PackedScene" uid="uid://bnvhqss2dr0bp" path="res://Scenes/Level_1/bg_level_1.tscn" id="1_yru7x"]
 [ext_resource type="PackedScene" uid="uid://ca1jl7tjmr12y" path="res://Scenes/Level_1/tile_map_level_1.tscn" id="2_i2p3s"]
@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://bm7sv8dwijkhi" path="res://Arts/Assets/Fruits/Cherries.png" id="6_o6uw1"]
 [ext_resource type="PackedScene" uid="uid://ir8fo5ifbmq1" path="res://Scenes/obstacles.tscn" id="6_umt0l"]
 [ext_resource type="PackedScene" uid="uid://c58jvwxd42dc1" path="res://Scenes/cherries_collectable.tscn" id="7_gc53e"]
+[ext_resource type="AudioStream" uid="uid://cgw8ujfxtlc5h" path="res://Arts/Audio/Interface/confirmation_002.ogg" id="9_qfs6g"]
+[ext_resource type="AudioStream" uid="uid://cahij0jdfq7a6" path="res://Arts/Audio/Interface/confirmation_001.ogg" id="10_tjrtt"]
+[ext_resource type="AudioStream" uid="uid://bi27bjlyag7jn" path="res://Arts/Audio/Music/Three Red Hearts - Penguin Town.ogg" id="11_xagpc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0xttl"]
 atlas = ExtResource("6_o6uw1")
@@ -147,17 +150,24 @@ position = Vector2(220, 496)
 scale = Vector2(3, 3)
 zoom = Vector2(0.5, 0.5)
 process_callback = 0
+limit_bottom = 690
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 drag_horizontal_offset = 1.0
 
-[node name="BG" parent="." instance=ExtResource("1_yru7x")]
-z_index = -2
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-32, -646)
+motion_offset = Vector2(1, 0)
+motion_mirroring = Vector2(3630, 0)
+
+[node name="BG" parent="ParallaxBackground/ParallaxLayer" instance=ExtResource("1_yru7x")]
 offset_left = -32.0
-offset_top = -32.0
-offset_right = 3599.0
-offset_bottom = 672.0
+offset_top = 12.0
+offset_right = 3616.0
+offset_bottom = 1310.0
 
 [node name="TileMap" parent="." instance=ExtResource("2_i2p3s")]
 position = Vector2(-32, -32)
@@ -205,12 +215,76 @@ centered = false
 [node name="WrapperObstacles" type="Node" parent="."]
 
 [node name="Obstacles" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
-position = Vector2(2718, 507)
+position = Vector2(2758, 507)
 
 [node name="Obstacles2" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
-position = Vector2(2521, 505)
+position = Vector2(2876, 503)
+
+[node name="Obstacles3" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
+position = Vector2(2997, 507)
+
+[node name="Obstacles4" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
+position = Vector2(3115, 503)
+
+[node name="Obstacles5" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
+position = Vector2(3076, 267)
+
+[node name="Obstacles6" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
+position = Vector2(2214, 12)
+
+[node name="Obstacles7" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
+position = Vector2(1060, -86)
+
+[node name="Obstacles8" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
+position = Vector2(734, -86)
+
+[node name="Obstacles9" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
+position = Vector2(280, -224)
+
+[node name="Obstacles10" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
+position = Vector2(2072, -222)
 
 [node name="WrapperCherries" type="Node" parent="."]
 
-[node name="Collectables_cherries" parent="." instance=ExtResource("7_gc53e")]
+[node name="Collectables_cherries" parent="WrapperCherries" instance=ExtResource("7_gc53e")]
 position = Vector2(873, 268)
+
+[node name="Collectables_cherries2" parent="WrapperCherries" instance=ExtResource("7_gc53e")]
+position = Vector2(1325, 143)
+
+[node name="Collectables_cherries3" parent="WrapperCherries" instance=ExtResource("7_gc53e")]
+position = Vector2(1482, -79)
+
+[node name="Collectables_cherries4" parent="WrapperCherries" instance=ExtResource("7_gc53e")]
+position = Vector2(2226, -366)
+
+[node name="Collectables_cherries5" parent="WrapperCherries" instance=ExtResource("7_gc53e")]
+position = Vector2(1882, -180)
+
+[node name="Collectables_cherries6" parent="WrapperCherries" instance=ExtResource("7_gc53e")]
+position = Vector2(525, -209)
+
+[node name="Collectables_cherries7" parent="WrapperCherries" instance=ExtResource("7_gc53e")]
+position = Vector2(150, -358)
+
+[node name="Collectables_cherries8" parent="WrapperCherries" instance=ExtResource("7_gc53e")]
+position = Vector2(1866, 252)
+
+[node name="Collectables_cherries9" parent="WrapperCherries" instance=ExtResource("7_gc53e")]
+position = Vector2(2463, 249)
+
+[node name="Collectables_cherries10" parent="WrapperCherries" instance=ExtResource("7_gc53e")]
+position = Vector2(2444, 20)
+
+[node name="CollectCherrieAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_qfs6g")
+volume_db = 5.0
+
+[node name="CollectTrophieAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_tjrtt")
+volume_db = 5.0
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_xagpc")
+volume_db = -10.0
+autoplay = true

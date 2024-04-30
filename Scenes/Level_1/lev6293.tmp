@@ -1,0 +1,217 @@
+[gd_scene load_steps=27 format=3 uid="uid://cdymwnw3odf2e"]
+
+[ext_resource type="PackedScene" uid="uid://bnvhqss2dr0bp" path="res://Scenes/Level_1/bg_level_1.tscn" id="1_yru7x"]
+[ext_resource type="PackedScene" uid="uid://ca1jl7tjmr12y" path="res://Scenes/Level_1/tile_map_level_1.tscn" id="2_i2p3s"]
+[ext_resource type="PackedScene" uid="uid://sko0w8wy0jeo" path="res://Scenes/player.tscn" id="3_qoqjx"]
+[ext_resource type="Script" path="res://Scripts/GameManager.gd" id="4_mwdu7"]
+[ext_resource type="PackedScene" uid="uid://cyulk4ytok41t" path="res://Scenes/trophy.tscn" id="6_5xw3e"]
+[ext_resource type="Texture2D" uid="uid://bm7sv8dwijkhi" path="res://Arts/Assets/Fruits/Cherries.png" id="6_o6uw1"]
+[ext_resource type="PackedScene" uid="uid://ir8fo5ifbmq1" path="res://Scenes/obstacles.tscn" id="6_umt0l"]
+[ext_resource type="PackedScene" uid="uid://c58jvwxd42dc1" path="res://Scenes/cherries_collectable.tscn" id="7_gc53e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xttl"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_buydx"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2w4c"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lsn16"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7sm5a"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2jh0"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pnmx"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ime3h"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tei4c"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ql6l"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ae1r1"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjgyl"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_td4ns"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ui5o7"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yori0"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56nbk"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8u7b7"]
+atlas = ExtResource("6_o6uw1")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qpx5a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xttl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_buydx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2w4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lsn16")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7sm5a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2jh0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0pnmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ime3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tei4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ql6l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ae1r1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mjgyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_td4ns")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ui5o7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yori0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_56nbk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8u7b7")
+}],
+"loop": false,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="Level1" type="Node2D"]
+
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("4_mwdu7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(220, 496)
+scale = Vector2(3, 3)
+zoom = Vector2(0.5, 0.5)
+process_callback = 0
+limit_bottom = 690
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_horizontal_offset = 1.0
+
+[node name="BG" parent="." instance=ExtResource("1_yru7x")]
+z_index = -2
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 3599.0
+offset_bottom = 672.0
+
+[node name="TileMap" parent="." instance=ExtResource("2_i2p3s")]
+position = Vector2(-32, -32)
+
+[node name="Player" parent="." instance=ExtResource("3_qoqjx")]
+position = Vector2(220, 496)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../Camera2D")
+
+[node name="Troféu" parent="." instance=ExtResource("6_5xw3e")]
+position = Vector2(3331, 369)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(120, 65)
+offset_right = 120.0
+offset_bottom = 65.0
+
+[node name="PointsLabel" type="Label" parent="UI/Panel"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(70, 65)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.417
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0400047
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 30
+text = "0/12"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cherrie Icon" type="AnimatedSprite2D" parent="UI"]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_qpx5a")
+frame_progress = 0.195756
+centered = false
+
+[node name="WrapperObstacles" type="Node" parent="."]
+
+[node name="Obstacles" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
+position = Vector2(2718, 507)
+
+[node name="Obstacles2" parent="WrapperObstacles" instance=ExtResource("6_umt0l")]
+position = Vector2(377, 503)
+
+[node name="WrapperCherries" type="Node" parent="."]
+
+[node name="Collectables_cherries" parent="." instance=ExtResource("7_gc53e")]
+position = Vector2(873, 268)

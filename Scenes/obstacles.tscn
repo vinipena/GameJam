@@ -1,9 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://ir8fo5ifbmq1"]
+[gd_scene load_steps=14 format=3 uid="uid://ir8fo5ifbmq1"]
 
 [ext_resource type="Script" path="res://Scripts/obstacles.gd" id="1_x7re7"]
 [ext_resource type="Texture2D" uid="uid://c6yrgqf1mmatc" path="res://Arts/Pixel Adventure 1 (1)/Free/Traps/Saw/On (38x38).png" id="2_mc41g"]
+[ext_resource type="AudioStream" uid="uid://5wdska3s4sl7" path="res://Arts/Audio/Interface/error_007.ogg" id="3_c8obp"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_coepp"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_khp4i"]
+radius = 38.2099
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rvgy5"]
 atlas = ExtResource("2_mc41g")
@@ -69,11 +71,12 @@ animations = [{
 "speed": 60.0
 }]
 
-[node name="Obstacles" type="Area2D"]
+[node name="Obstacles" type="Area2D" groups=["obstaculos"]]
+z_index = -1
 script = ExtResource("1_x7re7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_coepp")
+shape = SubResource("CircleShape2D_khp4i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2, 2)
@@ -82,4 +85,10 @@ animation = &"saw"
 autoplay = "saw"
 frame_progress = 0.16818
 
+[node name="Timer" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_c8obp")
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
