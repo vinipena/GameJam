@@ -1,18 +1,13 @@
-res://Arts/Assets/Fruits
-<<<<<<< Updated upstream
-=======
-res://Scripts
+res://Resources
+res://Arts/HUD
+res://Arts/Icons/Pointers
 res://Scenes
->>>>>>> Stashed changes
 res://Arts/Pixel Adventure 1 (1)/Free/Main Characters/Pink Man
 res://Arts/Pixel Adventure 1 (1)/Free
 res://Arts/Pixel Adventure 1 (1)/Free/Traps/Platforms
 res://Arts/Pixel Adventure 1 (1)/Free/Traps/Saw
-<<<<<<< Updated upstream
-res://Scenes
 res://Scripts
-=======
->>>>>>> Stashed changes
+res://Arts/Assets/Fruits
 res://Arts/Character/Dead
 res://Arts/Character/Jumlp-All
 res://Arts/Character/Run

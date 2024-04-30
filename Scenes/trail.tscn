@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://be7sfdo346ef5"]
 
-[ext_resource type="Script" path="res://Trail.gd" id="1_prtu1"]
+[ext_resource type="Script" path="res://Scenes/Trail.gd" id="1_prtu1"]
 
 [sub_resource type="Curve" id="Curve_lbbaa"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
