@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714450437
+::res://::1714507598
 icon.svg::CompressedTexture2D::2553964492656485689::1712517661::1712517661::1::::<><>::
-::res://Arts/::1714445873
-measuring_background.png::CompressedTexture2D::969497832978121368::1714419168::1714419168::1::::<><>::
+::res://Arts/::1714507585
+measuring_background.png::CompressedTexture2D::969497832978121368::1714507428::1714507428::1::::<><>::
 ::res://Arts/Assets/::1714442501
 Buildings.png::CompressedTexture2D::5877469382965754070::1712517660::1712517660::1::::<><>::
 End (Idle).png::CompressedTexture2D::7227331616256389026::1712517660::1712517660::1::::<><>::
@@ -21,20 +21,20 @@ Melon.png::CompressedTexture2D::3455663692217824464::1712517660::1712517660::1::
 Orange.png::CompressedTexture2D::558760507374032075::1712517660::1712517660::1::::<><>::
 Pineapple.png::CompressedTexture2D::1145681353172203066::1712517660::1712517660::1::::<><>::
 Strawberry.png::CompressedTexture2D::4836946508013662356::1712517660::1712517660::1::::<><>::
-::res://Arts/Audio/::1714445909
-jump_sound.wav::AudioStreamWAV::7657139480636691293::1712517661::1714445874::1::::<><>::
-::res://Arts/Audio/Interface/::1714440274
-confirmation_001.ogg::AudioStreamOggVorbis::4787795146882543503::1714440142::1714440274::1::::<><>::
-confirmation_002.ogg::AudioStreamOggVorbis::5241430597948116915::1714440136::1714440274::1::::<><>::
-error_007.ogg::AudioStreamOggVorbis::2151296441529782502::1714440185::1714440274::1::::<><>::
-::res://Arts/Audio/Music/::1714450553
-awesomeness.wav::AudioStreamWAV::6985971823892580544::1714445840::1714445910::1::::<><>::
-Three Red Hearts - Penguin Town.ogg::AudioStreamOggVorbis::3005614852513129007::1714450339::1714450588::1::::<><>::
-time_for_adventure.mp3::AudioStreamMP3::5995024786988040422::1714442530::1714442627::1::::<><>::
-::res://Arts/Audio/Voices/::1714439944
-game_over.ogg::AudioStreamOggVorbis::2728885166400835579::1714439816::1714439944::1::::<><>::
-you_lose.ogg::AudioStreamOggVorbis::6117156984308043910::1714439789::1714439944::1::::<><>::
-you_win.ogg::AudioStreamOggVorbis::6764262602397715290::1714439784::1714439944::1::::<><>::
+::res://Arts/Audio/::1714507585
+jump_sound.wav::AudioStreamWAV::7657139480636691293::1714507585::1714507585::1::::<><>::
+::res://Arts/Audio/Interface/::1714507585
+confirmation_001.ogg::AudioStreamOggVorbis::4787795146882543503::1714507585::1714507585::1::::<><>::
+confirmation_002.ogg::AudioStreamOggVorbis::5241430597948116915::1714507585::1714507585::1::::<><>::
+error_007.ogg::AudioStreamOggVorbis::2151296441529782502::1714507585::1714507585::1::::<><>::
+::res://Arts/Audio/Music/::1714507585
+awesomeness.wav::AudioStreamWAV::6985971823892580544::1714507585::1714507585::1::::<><>::
+Three Red Hearts - Penguin Town.ogg::AudioStreamOggVorbis::3005614852513129007::1714507585::1714507585::1::::<><>::
+time_for_adventure.mp3::AudioStreamMP3::5995024786988040422::1714507585::1714507585::1::::<><>::
+::res://Arts/Audio/Voices/::1714507585
+game_over.ogg::AudioStreamOggVorbis::2728885166400835579::1714507585::1714507585::1::::<><>::
+you_lose.ogg::AudioStreamOggVorbis::6117156984308043910::1714507585::1714507585::1::::<><>::
+you_win.ogg::AudioStreamOggVorbis::6764262602397715290::1714507585::1714507585::1::::<><>::
 ::res://Arts/Background/::1712517660
 Background.png::CompressedTexture2D::422589606829625768::1712517660::1712517660::1::::<><>::
 CherryPicker_logo.png::CompressedTexture2D::6788698117519196806::1712517660::1712517660::1::::<><>::
@@ -79,23 +79,23 @@ Run (32x32).png::CompressedTexture2D::5680492735526962526::1712517661::171251766
 Wall Jump (32x32).png::CompressedTexture2D::8282666865514483199::1712517661::1712517661::1::::<><>::
 ::res://Arts/Character/Run/::1712517661
 Run-Sheet.png::CompressedTexture2D::1306297179037144299::1712517661::1712517661::1::::<><>::
-::res://Arts/HUD/::1714445856
+::res://Arts/HUD/::1714507585
 Base-01.png::CompressedTexture2D::6220018479209261229::1712517661::1712517661::1::::<><>::
-buttonLong_beige.png::CompressedTexture2D::7895942943300665804::1714444005::1714444147::1::::<><>::
-buttonLong_beige_pressed.png::CompressedTexture2D::8956194943071257876::1714444005::1714444147::1::::<><>::
-buttonLong_blue.png::CompressedTexture2D::5825293282643746631::1714444005::1714444147::1::::<><>::
-buttonLong_blue_pressed.png::CompressedTexture2D::6104374850224816137::1714444005::1714444147::1::::<><>::
-buttonLong_brown.png::CompressedTexture2D::7046268215883724267::1714444005::1714444147::1::::<><>::
-buttonLong_brown_pressed.png::CompressedTexture2D::3535193501376778608::1714444005::1714444147::1::::<><>::
-buttonLong_grey.png::CompressedTexture2D::8307186091029887455::1714444005::1714444147::1::::<><>::
-buttonLong_grey_pressed.png::CompressedTexture2D::8584450162874121119::1714444005::1714444147::1::::<><>::
-PixelOperator8-Bold.ttf::FontFile::3255886502820823266::1714443418::1714443447::1::::<><>::
-PixelOperator8.ttf::FontFile::1846814436492128067::1714443418::1714443447::1::::<><>::
-::res://Arts/Icons/::1714441178
-::res://Arts/Icons/Pointers/::1714442627
-pointer_c.png::CompressedTexture2D::3852821684612164945::1714440967::1714442627::1::::<><>::
-pointer_toon_a.png::CompressedTexture2D::4571654792173410226::1714440967::1714442627::1::::<><>::
-pointer_toon_b.png::CompressedTexture2D::8473397160787080::1714440967::1714442627::1::::<><>::
+buttonLong_beige.png::CompressedTexture2D::7895942943300665804::1714507585::1714507585::1::::<><>::
+buttonLong_beige_pressed.png::CompressedTexture2D::8956194943071257876::1714507585::1714507585::1::::<><>::
+buttonLong_blue.png::CompressedTexture2D::5825293282643746631::1714507585::1714507585::1::::<><>::
+buttonLong_blue_pressed.png::CompressedTexture2D::6104374850224816137::1714507585::1714507585::1::::<><>::
+buttonLong_brown.png::CompressedTexture2D::7046268215883724267::1714507585::1714507585::1::::<><>::
+buttonLong_brown_pressed.png::CompressedTexture2D::3535193501376778608::1714507585::1714507585::1::::<><>::
+buttonLong_grey.png::CompressedTexture2D::8307186091029887455::1714507585::1714507585::1::::<><>::
+buttonLong_grey_pressed.png::CompressedTexture2D::8584450162874121119::1714507585::1714507585::1::::<><>::
+PixelOperator8-Bold.ttf::FontFile::3255886502820823266::1714507585::1714507585::1::::<><>::
+PixelOperator8.ttf::FontFile::1846814436492128067::1714507585::1714507585::1::::<><>::
+::res://Arts/Icons/::1714507585
+::res://Arts/Icons/Pointers/::1714507585
+pointer_c.png::CompressedTexture2D::3852821684612164945::1714507585::1714507585::1::::<><>::
+pointer_toon_a.png::CompressedTexture2D::4571654792173410226::1714507585::1714507585::1::::<><>::
+pointer_toon_b.png::CompressedTexture2D::8473397160787080::1714507585::1714507585::1::::<><>::
 ::res://Arts/Jungle Asset Pack/::1712517661
 ::res://Arts/Jungle Asset Pack/Jungle Asset Pack/::1712517661
 mockup.png::CompressedTexture2D::5363205711374733292::1712517661::1712517661::1::::<><>::
@@ -367,40 +367,40 @@ Golden-Tree.png::CompressedTexture2D::92012770330133798::1712517661::1712517661:
 Green-Tree.png::CompressedTexture2D::430099004831634564::1712517661::1712517661::1::::<><>::
 Red-Tree.png::CompressedTexture2D::5752238181909448784::1712517661::1712517661::1::::<><>::
 Yellow-Tree.png::CompressedTexture2D::8583196630886763430::1712517661::1712517661::1::::<><>::
-::res://Resources/::1714445961
-button_theme.tres::Theme::5921258095093591462::1714445961::0::1::::<><>::uid://cuva2byeiqfxl::::res://Arts/HUD/Base-01.png
-::res://Scenes/::1714449331
-cherries_collectable.tscn::PackedScene::6947216288238376754::1714449331::0::1::::<><>::res://Scripts/cherries_collectable.gd<>uid://bm7sv8dwijkhi::::res://Arts/Assets/Fruits/Cherries.png<>uid://cahij0jdfq7a6::::res://Arts/Audio/Interface/confirmation_001.ogg
+::res://Resources/::1714507585
+button_theme.tres::Theme::5921258095093591462::1714507585::0::1::::<><>::uid://cuva2byeiqfxl::::res://Arts/HUD/Base-01.png
+::res://Scenes/::1714507585
+cherries_collectable.tscn::PackedScene::6947216288238376754::1714507585::0::1::::<><>::res://Scripts/cherries_collectable.gd<>uid://bm7sv8dwijkhi::::res://Arts/Assets/Fruits/Cherries.png<>uid://cahij0jdfq7a6::::res://Arts/Audio/Interface/confirmation_001.ogg
 ground.tscn::PackedScene::5760935628815474324::1712517661::0::1::::<><>::uid://b7i2di72mqbwi::::res://Arts/Background/parallax background/ground.png
-main_menu.tscn::PackedScene::3555290480991832403::1714449331::0::1::::<><>::res://Scripts/main_menu.gd<>uid://dfl2aw46ytx8y::::res://Arts/Background/Pink.png<>uid://c3yq4pjlhna5s::::res://Arts/Background/CherryPicker_logo.png<>uid://cqmkixu2iq3cs::::res://Resources/button_theme.tres<>uid://cahij0jdfq7a6::::res://Arts/Audio/Interface/confirmation_001.ogg<>uid://bmnf8fd2u56py::::res://Arts/HUD/PixelOperator8-Bold.ttf<>uid://crobgg2nblfak::::res://Arts/Audio/Music/time_for_adventure.mp3<>uid://c58jvwxd42dc1::::res://Scenes/cherries_collectable.tscn
-obstacles.tscn::PackedScene::598618542695346370::1714449330::0::1::::<><>::res://Scripts/obstacles.gd<>uid://c6yrgqf1mmatc::::res://Arts/Pixel Adventure 1 (1)/Free/Traps/Saw/On (38x38).png<>uid://5wdska3s4sl7::::res://Arts/Audio/Interface/error_007.ogg
-player.tscn::PackedScene::1284938853296427010::1714449330::0::1::::<><>::res://Scripts/player.gd<>uid://hogggu16otnm::::res://Arts/Character/Jump-End/Jump-End-Sheet.png<>uid://dy5u01my1h8jd::::res://Arts/Character/Idle/Idle-Sheet.png<>uid://dp6am20pqm2l2::::res://Arts/Character/Jump-Start/Jump-Start-Sheet.png<>uid://b5lnqnfla372h::::res://Arts/Character/Jumlp-All/Jump-All-Sheet.png<>uid://su1r2m75xrl0::::res://Arts/Character/Run/Run-Sheet.png<>uid://cm6w5dsxvw7hq::::res://Arts/Character/Pink Man/Run (32x32).png<>res://Scripts/PlayerStateMachine.gd<>uid://bwvu7xd87le5x::::res://Arts/Character/Pink Man/Double Jump (32x32).png<>uid://siyfg4uxti6c::::res://Arts/Character/Pink Man/Jump (32x32).png<>uid://bqsre70nfgvhp::::res://Arts/Character/Pink Man/Fall (32x32).png<>uid://ck83mp7pu5top::::res://Arts/Character/Pink Man/Idle (32x32).png<>uid://b6os1uthmt0sy::::res://Arts/Pixel Adventure 1 (1)/Free/Main Characters/Pink Man/Hit (32x32).png<>res://Scripts/States/GroundState.gd<>res://Scripts/States/AirState.gd<>res://Scripts/StateDebugLabel.gd<>res://Scripts/States/DeadState.gd<>res://Scripts/States/ResetState.gd<>uid://dhdf76u4q6udp::::res://Arts/Audio/jump_sound.wav<>uid://be7sfdo346ef5::::res://Scenes/trail.tscn<>res://Scripts/player_trail.gd
-stick_platform.tscn::PackedScene::3577658129206260219::1714449330::0::1::::<><>::uid://vlws8w6fyifk::::res://Arts/Pixel Adventure 1 (1)/Free/Traps/Platforms/Brown Off.png
-Trail.gd::GDScript::-1::1714419168::0::1::::Trails<>Line2D<>::
-trail.tscn::PackedScene::2734338161723945376::1714445091::0::1::::<><>::res://Scenes/Trail.gd
+main_menu.tscn::PackedScene::3555290480991832403::1714507585::0::1::::<><>::res://Scripts/main_menu.gd<>uid://dfl2aw46ytx8y::::res://Arts/Background/Pink.png<>uid://c3yq4pjlhna5s::::res://Arts/Background/CherryPicker_logo.png<>uid://cqmkixu2iq3cs::::res://Resources/button_theme.tres<>uid://cahij0jdfq7a6::::res://Arts/Audio/Interface/confirmation_001.ogg<>uid://bmnf8fd2u56py::::res://Arts/HUD/PixelOperator8-Bold.ttf<>uid://crobgg2nblfak::::res://Arts/Audio/Music/time_for_adventure.mp3<>uid://c58jvwxd42dc1::::res://Scenes/cherries_collectable.tscn
+obstacles.tscn::PackedScene::598618542695346370::1714507585::0::1::::<><>::res://Scripts/obstacles.gd<>uid://c6yrgqf1mmatc::::res://Arts/Pixel Adventure 1 (1)/Free/Traps/Saw/On (38x38).png<>uid://5wdska3s4sl7::::res://Arts/Audio/Interface/error_007.ogg
+player.tscn::PackedScene::1284938853296427010::1714507585::0::1::::<><>::res://Scripts/player.gd<>uid://hogggu16otnm::::res://Arts/Character/Jump-End/Jump-End-Sheet.png<>uid://dy5u01my1h8jd::::res://Arts/Character/Idle/Idle-Sheet.png<>uid://dp6am20pqm2l2::::res://Arts/Character/Jump-Start/Jump-Start-Sheet.png<>uid://b5lnqnfla372h::::res://Arts/Character/Jumlp-All/Jump-All-Sheet.png<>uid://su1r2m75xrl0::::res://Arts/Character/Run/Run-Sheet.png<>uid://cm6w5dsxvw7hq::::res://Arts/Character/Pink Man/Run (32x32).png<>res://Scripts/PlayerStateMachine.gd<>uid://bwvu7xd87le5x::::res://Arts/Character/Pink Man/Double Jump (32x32).png<>uid://siyfg4uxti6c::::res://Arts/Character/Pink Man/Jump (32x32).png<>uid://bqsre70nfgvhp::::res://Arts/Character/Pink Man/Fall (32x32).png<>uid://ck83mp7pu5top::::res://Arts/Character/Pink Man/Idle (32x32).png<>uid://b6os1uthmt0sy::::res://Arts/Pixel Adventure 1 (1)/Free/Main Characters/Pink Man/Hit (32x32).png<>res://Scripts/States/GroundState.gd<>res://Scripts/States/AirState.gd<>res://Scripts/StateDebugLabel.gd<>res://Scripts/States/DeadState.gd<>res://Scripts/States/ResetState.gd<>uid://dhdf76u4q6udp::::res://Arts/Audio/jump_sound.wav<>uid://be7sfdo346ef5::::res://Scenes/trail.tscn<>res://Scripts/player_trail.gd
+stick_platform.tscn::PackedScene::3577658129206260219::1714507507::0::1::::<><>::uid://vlws8w6fyifk::::res://Arts/Pixel Adventure 1 (1)/Free/Traps/Platforms/Brown Off.png
+Trail.gd::GDScript::-1::1714507585::0::1::::Trails<>Line2D<>::
+trail.tscn::PackedScene::2734338161723945376::1714507585::0::1::::<><>::res://Scenes/Trail.gd
 trophy.tscn::PackedScene::6499348475774524299::1713206995::0::1::::<><>::res://Scripts/trophy.gd<>uid://da78di0ce1nkk::::res://Arts/Assets/End (Idle).png
 ui.tscn::PackedScene::4985306846476905::1712517661::0::1::::<><>::
-::res://Scenes/Level_1/::1714449401
-bg_level_1.tscn::PackedScene::3342682149932865581::1714449331::0::1::::<><>::uid://dy1ktvkcbocl5::::res://Arts/Background/Green.png
-level_1.tscn::PackedScene::5033721573857113382::1714449401::0::1::::<><>::uid://bnvhqss2dr0bp::::res://Scenes/Level_1/bg_level_1.tscn<>uid://ca1jl7tjmr12y::::res://Scenes/Level_1/tile_map_level_1.tscn<>uid://sko0w8wy0jeo::::res://Scenes/player.tscn<>res://Scripts/GameManager.gd<>uid://cyulk4ytok41t::::res://Scenes/trophy.tscn<>uid://bm7sv8dwijkhi::::res://Arts/Assets/Fruits/Cherries.png<>uid://ir8fo5ifbmq1::::res://Scenes/obstacles.tscn<>uid://c58jvwxd42dc1::::res://Scenes/cherries_collectable.tscn<>uid://cgw8ujfxtlc5h::::res://Arts/Audio/Interface/confirmation_002.ogg<>uid://cahij0jdfq7a6::::res://Arts/Audio/Interface/confirmation_001.ogg
-tile_map_level_1.tscn::PackedScene::4827082996183750846::1714449331::0::1::::<><>::uid://c7ph7ofygra7y::::res://Arts/Background/Terrain (16x16).png<>uid://bq8brhy1itc2f::::res://Scenes/stick_platform.tscn<>uid://n2vqt0eu7t7m::::res://Arts/measuring_background.png
+::res://Scenes/Level_1/::1714507585
+bg_level_1.tscn::PackedScene::3342682149932865581::1714507508::0::1::::<><>::uid://dy1ktvkcbocl5::::res://Arts/Background/Green.png
+level_1.tscn::PackedScene::5033721573857113382::1714507585::0::1::::<><>::uid://bnvhqss2dr0bp::::res://Scenes/Level_1/bg_level_1.tscn<>uid://ca1jl7tjmr12y::::res://Scenes/Level_1/tile_map_level_1.tscn<>uid://sko0w8wy0jeo::::res://Scenes/player.tscn<>res://Scripts/GameManager.gd<>uid://cyulk4ytok41t::::res://Scenes/trophy.tscn<>uid://bm7sv8dwijkhi::::res://Arts/Assets/Fruits/Cherries.png<>uid://ir8fo5ifbmq1::::res://Scenes/obstacles.tscn<>uid://c58jvwxd42dc1::::res://Scenes/cherries_collectable.tscn<>uid://cgw8ujfxtlc5h::::res://Arts/Audio/Interface/confirmation_002.ogg<>uid://cahij0jdfq7a6::::res://Arts/Audio/Interface/confirmation_001.ogg<>uid://bi27bjlyag7jn::::res://Arts/Audio/Music/Three Red Hearts - Penguin Town.ogg
+tile_map_level_1.tscn::PackedScene::4827082996183750846::1714507585::0::1::::<><>::uid://c7ph7ofygra7y::::res://Arts/Background/Terrain (16x16).png<>uid://bq8brhy1itc2f::::res://Scenes/stick_platform.tscn<>uid://n2vqt0eu7t7m::::res://Arts/measuring_background.png
 ::res://Scenes/Level_2/::1713232665
 bg_level_2.tscn::PackedScene::1249134787260894710::1713232665::0::1::::<><>::uid://dy1ktvkcbocl5::::res://Arts/Background/Green.png
 level_2.tscn::PackedScene::1126982311021227595::1713232665::0::1::::<><>::uid://codwal8ifbd::::res://Scenes/ui.tscn<>uid://sko0w8wy0jeo::::res://Scenes/player.tscn<>res://Scripts/GameManager.gd<>uid://dg6sgsvgxyes7::::res://Scenes/Level_2/tile_map_level_2.tscn
 tile_map_level_2.tscn::PackedScene::7645495422082068420::1713232665::0::1::::<><>::uid://c7ph7ofygra7y::::res://Arts/Background/Terrain (16x16).png
-::res://Scripts/::1714449329
-cherries_collectable.gd::GDScript::-1::1714448847::0::1::::<>Area2D<>::
-GameManager.gd::GDScript::-1::1714449287::0::1::::<>Node<>::
-main_menu.gd::GDScript::-1::1714442752::0::1::::<>Node<>::
-obstacles.gd::GDScript::-1::1714440507::0::1::::<>Area2D<>::
-player.gd::GDScript::-1::1714426960::0::1::::<>CharacterBody2D<>::
-PlayerStateMachine.gd::GDScript::-1::1714419168::0::1::::PlayerStateMachine<>Node<>::
-player_trail.gd::GDScript::-1::1714419168::0::1::::<>Trails<>::
-StateDebugLabel.gd::GDScript::-1::1714419168::0::1::::<>Label<>::
-trophy.gd::GDScript::-1::1714449329::0::1::::<>Area2D<>::
-::res://Scripts/States/::1714419275
-AirState.gd::GDScript::-1::1714419168::0::1::::AirState<>State<>::
-DeadState.gd::GDScript::-1::1714419275::0::1::::DeadState<>State<>::
-GroundState.gd::GDScript::-1::1714419168::0::1::::GroundState<>State<>::
+::res://Scripts/::1714507585
+cherries_collectable.gd::GDScript::-1::1714507585::0::1::::<>Area2D<>::
+GameManager.gd::GDScript::-1::1714507585::0::1::::<>Node<>::
+main_menu.gd::GDScript::-1::1714507585::0::1::::<>Node<>::
+obstacles.gd::GDScript::-1::1714507585::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1714507585::0::1::::<>CharacterBody2D<>::
+PlayerStateMachine.gd::GDScript::-1::1714507429::0::1::::PlayerStateMachine<>Node<>::
+player_trail.gd::GDScript::-1::1714507429::0::1::::<>Trails<>::
+StateDebugLabel.gd::GDScript::-1::1714507429::0::1::::<>Label<>::
+trophy.gd::GDScript::-1::1714507585::0::1::::<>Area2D<>::
+::res://Scripts/States/::1714507585
+AirState.gd::GDScript::-1::1714507429::0::1::::AirState<>State<>::
+DeadState.gd::GDScript::-1::1714507585::0::1::::DeadState<>State<>::
+GroundState.gd::GDScript::-1::1714507429::0::1::::GroundState<>State<>::
 ResetState.gd::GDScript::-1::1712517661::0::1::::ResetState<>State<>::
-State.gd::GDScript::-1::1714419168::0::1::::State<>Node<>::
+State.gd::GDScript::-1::1714507429::0::1::::State<>Node<>::
