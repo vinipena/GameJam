@@ -8,9 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://bm7sv8dwijkhi" path="res://Arts/Assets/Fruits/Cherries.png" id="6_o6uw1"]
 [ext_resource type="PackedScene" uid="uid://ir8fo5ifbmq1" path="res://Scenes/obstacles.tscn" id="6_umt0l"]
 [ext_resource type="PackedScene" uid="uid://c58jvwxd42dc1" path="res://Scenes/cherries_collectable.tscn" id="7_gc53e"]
-[ext_resource type="AudioStream" uid="uid://cgw8ujfxtlc5h" path="res://Arts/Audio/Interface/confirmation_002.ogg" id="9_qfs6g"]
-[ext_resource type="AudioStream" uid="uid://cahij0jdfq7a6" path="res://Arts/Audio/Interface/confirmation_001.ogg" id="10_tjrtt"]
-[ext_resource type="AudioStream" uid="uid://bi27bjlyag7jn" path="res://Arts/Audio/Music/Three Red Hearts - Penguin Town.ogg" id="11_xagpc"]
+[ext_resource type="AudioStream" path="res://Arts/Audio/Interface/confirmation_002.ogg" id="9_qfs6g"]
+[ext_resource type="AudioStream" path="res://Arts/Audio/Interface/confirmation_001.ogg" id="10_tjrtt"]
+[ext_resource type="AudioStream" path="res://Arts/Audio/Music/Three Red Hearts - Penguin Town.ogg" id="11_xagpc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0xttl"]
 atlas = ExtResource("6_o6uw1")

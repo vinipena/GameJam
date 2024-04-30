@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/obstacles.gd" id="1_x7re7"]
 [ext_resource type="Texture2D" uid="uid://c6yrgqf1mmatc" path="res://Arts/Pixel Adventure 1 (1)/Free/Traps/Saw/On (38x38).png" id="2_mc41g"]
-[ext_resource type="AudioStream" uid="uid://5wdska3s4sl7" path="res://Arts/Audio/Interface/error_007.ogg" id="3_c8obp"]
+[ext_resource type="AudioStream" path="res://Arts/Audio/Interface/error_007.ogg" id="3_c8obp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_khp4i"]
 radius = 38.2099

@@ -18,7 +18,7 @@
 [ext_resource type="Script" path="res://Scripts/StateDebugLabel.gd" id="11_mdvjr"]
 [ext_resource type="Script" path="res://Scripts/States/DeadState.gd" id="12_vl2tl"]
 [ext_resource type="Script" path="res://Scripts/States/ResetState.gd" id="13_hnjkw"]
-[ext_resource type="AudioStream" uid="uid://dhdf76u4q6udp" path="res://Arts/Audio/jump_sound.wav" id="20_v3kgp"]
+[ext_resource type="AudioStream" path="res://Arts/Audio/jump_sound.wav" id="20_v3kgp"]
 [ext_resource type="PackedScene" uid="uid://be7sfdo346ef5" path="res://Scenes/trail.tscn" id="21_0sb5w"]
 [ext_resource type="Script" path="res://Scripts/player_trail.gd" id="22_p2li7"]
 
